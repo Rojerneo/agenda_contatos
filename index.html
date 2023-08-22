@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;1,200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/agenda.png" alt="">
+            <h1>Cadastro de Contatos</h1>
+        </header>
+        <section>
+            <form id="form-cadastro">
+                <input id="cadastro-nome" type="text" required placeholder="Nome">
+                <input id="cadastro-telefone" type="number" required placeholder="Telefone">
+                <button type="submit">Salvar Contato</button>
+            </form>
+            <table cellSpacing = 0>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total de Contatos</td>
+                        <td id="soma-contatos">---</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </div>
+    <footer>
+        <p>Rogerio Oliveira - 2023</p>
+        <p>&copy; Ebac - Profissão: Desenvolvedor Full Stack Java v2</p>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>
